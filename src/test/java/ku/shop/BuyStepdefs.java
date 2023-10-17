@@ -32,5 +32,17 @@ public class BuyStepdefs {
     public void total_should_be(double total) {
         assertEquals(total, order.getTotal());
     }
+
+    @Then("total stock of {string} is {int}")
+    public void total_stock_of_is(String name, int stock) {
+        assertEquals(stock, catalog.getProduct(name).getStock());
+    }
 }
 
+// _________________________________
+//              ||  ||
+//              ||  ||
+// =-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=
+//        Name: Purit Tepkrit
+//       Student ID: 6410402121
+// =-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=
